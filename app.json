@@ -1,10 +1,17 @@
 {
   "expo": {
-    "name": "expo-camera",
-    "slug": "expo-camera",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
     ]
-  }
+  },
+
+  "name": "expo-camera",
+  "slug": "expo-camera",
+  "version": "1.0.0",
+  "assetBundlePatterns": ["**/*"]
 }
